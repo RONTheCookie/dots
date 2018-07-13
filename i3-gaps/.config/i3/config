@@ -174,3 +174,6 @@ for_window [class="^.*"] border pixel 0
 gaps inner 10
 gaps outer 0
 smart_gaps on
+
+# this might be a bad idea but i want it
+for_window [urgent="latest"] focus
