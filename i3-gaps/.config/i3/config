@@ -170,12 +170,12 @@ bar {
 }
 
 exec "~/.fehbg &"
+
 for_window [class="^.*"] border pixel 0
 gaps inner 10
 gaps outer 0
 smart_gaps on
+
 bindsym $mod+l exec "i3lock-fancy"
 bindsym $mod+Pause exec /home/ron/sharenix/sharenix-section
-
-
 bindsym $mod+Shift+s exec "i3lock-fancy && sudo systemctl suspend"
