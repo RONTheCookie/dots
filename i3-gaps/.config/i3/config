@@ -169,7 +169,8 @@ bar {
         status_command i3blocks
 }
 
-exec "~/.fehbg &"
+exec --no-startup-id "~/.fehbg &"
+exec --no-startup-id "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
 for_window [class="^.*"] border pixel 0
 gaps inner 10
