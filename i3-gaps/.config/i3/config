@@ -178,6 +178,6 @@ smart_gaps on
 
 bindsym $mod+l exec "i3lock-fancy"
 bindsym $mod+Pause exec /home/ron/sharenix/sharenix-section
-bindsym $mod+Shift+s exec "i3lock-fancy && sudo systemctl suspend"
+bindsym $mod+Shift+s exec "i3lock-fancy && systemctl suspend"
 
 bindsym $mod+x [urgent=latest] focus
