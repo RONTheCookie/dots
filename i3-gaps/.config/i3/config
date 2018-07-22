@@ -182,3 +182,9 @@ bindsym $mod+Pause exec /home/ron/sharenix/sharenix-section
 bindsym $mod+Shift+s exec "i3lock-fancy && systemctl suspend"
 
 bindsym $mod+x [urgent=latest] focus
+
+exec --no-startup-id compton
+exec --no-startup-id synclient VertScrollDelta=-111
+
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
