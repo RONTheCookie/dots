@@ -186,7 +186,7 @@ bindsym $mod+x [urgent=latest] focus
 
 exec --no-startup-id compton
 exec --no-startup-id synclient VertScrollDelta=-111
-exec --no-startup-id "xss-lock -- i3lock-fancy"
+exec --no-startup-id "xss-lock -- i3lock"
 
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
