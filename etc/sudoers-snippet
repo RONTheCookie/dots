@@ -1,0 +1,2 @@
+Cmnd_Alias PASSWORDLESS = /usr/bin/systemctl suspend
+ron ALL=(ALL) NOPASSWD: PASSWORDLESS
