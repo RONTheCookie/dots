@@ -188,7 +188,7 @@ bindsym $mod+x [urgent=latest] focus
 exec --no-startup-id compton
 exec --no-startup-id synclient VertScrollDelta=-111
 exec --no-startup-id "xset s 300 120" # 5 minutes (locks), 2 minutes afterwards (suspends)
-exec --no-startup-id "xss-lock -n 'i3lock -i ~/Pictures/lock.png' -- sudo systemctl suspend"
+exec --no-startup-id "sh ~/.config/i3/xss-lock.sh"
 
 
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 5 && pkill -RTMIN+12 i3blocks"
