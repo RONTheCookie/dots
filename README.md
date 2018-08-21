@@ -10,7 +10,7 @@ btw `stow i3-gaps` kthxbye (you might wanna have feh, i3lock-fancy and i3blocks)
 * i3-gaps
 * networkmanager-dmenu (`stow nm_dmenu`)
 * feh
-* i3lock-fancy (looking for replacement)
+* i3lock
 * polkit-gnome
 
 Other, unrelated packages:

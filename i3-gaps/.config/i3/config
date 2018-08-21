@@ -178,16 +178,16 @@ gaps inner 10
 gaps outer 0
 smart_gaps on
 
-bindsym $mod+l exec "i3lock-fancy"
+bindsym $mod+l exec "i3lock -i ~/Pictures/lock.png"
 bindsym $mod+Pause exec /home/ron/sharenix/sharenix-section
-bindsym $mod+Shift+s exec "i3lock-fancy && sleep 2; systemctl suspend"
+bindsym $mod+Shift+s exec "i3lock -i ~/Pictures/lock.png && sleep 2; systemctl suspend"
 bindsym $mod+Shift+n exec networkmanager_dmenu
 
 bindsym $mod+x [urgent=latest] focus
 
 exec --no-startup-id compton
 exec --no-startup-id synclient VertScrollDelta=-111
-exec --no-startup-id "xss-lock -- i3lock"
+exec --no-startup-id "xss-lock -- i3lock -i ~/Pictures/lock.png"
 
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 5 && pkill -RTMIN+12 i3blocks"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 5 && pkill -RTMIN+12 i3blocks"
