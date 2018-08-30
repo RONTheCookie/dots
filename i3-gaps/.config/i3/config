@@ -196,3 +196,6 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 5 && pkill -RTMIN+12 i3block
 
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+ && pkill -RTMIN+2 i3blocks"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%- && pkill -RTMIN+2 i3blocks"
+
+bindsym $mod+Shift+z workspace prev 
+bindsym $mod+Shift+x workspace next
