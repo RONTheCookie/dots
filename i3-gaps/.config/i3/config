@@ -178,18 +178,10 @@ gaps inner 10
 gaps outer 0
 smart_gaps on
 
-bindsym $mod+l exec "i3lock -i ~/Pictures/lock.png"
-bindsym $mod+Pause exec /home/ron/sharenix/sharenix-section
-bindsym $mod+Shift+s exec "i3lock -i ~/Pictures/lock.png && sleep 2; systemctl suspend"
-bindsym $mod+Shift+n exec networkmanager_dmenu
-
-bindsym $mod+x [urgent=latest] focus
-
 exec --no-startup-id compton
 exec --no-startup-id synclient VertScrollDelta=-111
 exec --no-startup-id "xset s 300 120" # 5 minutes (locks), 2 minutes afterwards (suspends)
 exec --no-startup-id "sh ~/.config/i3/xss-lock.sh"
-
 
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 5 && pkill -RTMIN+12 i3blocks"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 5 && pkill -RTMIN+12 i3blocks"
@@ -199,3 +191,9 @@ bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%- && pkill -RTM
 
 bindsym $mod+Shift+z workspace prev 
 bindsym $mod+Shift+x workspace next
+bindsym $mod+x [urgent=latest] focus
+
+bindsym $mod+l exec "i3lock -i ~/Pictures/lock.png"
+bindsym $mod+Pause exec /home/ron/sharenix/sharenix-section
+bindsym $mod+Shift+s exec "i3lock -i ~/Pictures/lock.png && sleep 2; systemctl suspend"
+bindsym $mod+Shift+n exec networkmanager_dmenu
