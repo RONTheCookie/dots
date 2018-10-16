@@ -25,3 +25,6 @@ Other, unrelated packages:
 * ranger (tried a bit, looks nice but might still use nautilus)
 Didn't test:
 * engrampa (archive tool, i use file-roller atm, alternative: xarchiver-gtk2)
+
+## unlock-server
+`unlock-server` is a tiny HTTP server that kills my i3lock when hit with the right token. I'm trying to get it to work with my phone's fingerprint sensor with this neat app https://play.google.com/store/apps/details?id=com.llamalab.automate&referrer=utm_source%3Dhomepage.
