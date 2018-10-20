@@ -1,2 +1,2 @@
 #!/bin/bash
-killall -u $USER i3lock
+killall -u $USER slock
