@@ -24,7 +24,7 @@ My Arch system's configuration files, utillities and scripts.
 * Clone this repo in a folder inside the root of your home directory
 * Make symlinks to what you want to use with stow
 ```
-    stow [bash, dunst, gtk, i3-gaps, nm_dmenu, termite, weechat, xorg]
+    stow [bash, dunst, gtk, i3-gaps, nm_dmenu, termite, weechat, xorg, i3blocks]
 ```
 
 ## unlock-server
