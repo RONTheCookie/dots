@@ -1,6 +1,6 @@
 # dots
 My Arch system's configuration files, utillities and scripts.
-
+https://github.com/RONTheCookie/dots/compare/sway?expand=1
 ## Packages
 * paper-icon-theme: icons
 * ttf-hack: terminal font
