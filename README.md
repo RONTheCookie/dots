@@ -14,6 +14,7 @@ My Arch system's configuration files, utillities and scripts.
 * polkit-gnome
 * stow: create symlinks to cfgs
 * termite: terminal emulator
+* pywal: color scheme magic
 
 ### Completly unrelated packages:
 * noto-fonts-emoji
