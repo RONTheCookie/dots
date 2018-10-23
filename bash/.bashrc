@@ -14,3 +14,4 @@ export VISUAL="nano"
 export EDITOR="nano"
 alias pacman="aurman"
 alias trizen="aurman"
+cat ~/.cache/wal/sequences
