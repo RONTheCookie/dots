@@ -15,3 +15,4 @@ export EDITOR="nano"
 alias pacman="aurman"
 alias trizen="aurman"
 cat ~/.cache/wal/sequences
+export TERM=xterm-256color # Nano doesn't recognize Termite when ssh'ing into a Debian-based machine.
