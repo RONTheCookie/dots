@@ -15,11 +15,11 @@ My Arch system's configuration files, utillities and scripts.
 * stow: create symlinks to cfgs
 * termite: terminal emulator
 * pywal: color scheme magic
+* byzanz: gif capture
+* sharenix: upload things (i think its just a curl wrapper but i havent gotten around to checking it then abandoning it)
 
 ### Completly unrelated packages:
 * noto-fonts-emoji
-* chromium https://wiki.archlinux.org/index.php/chromium#Widevine_Content_Decryption_Module_plugin
-* discord-canary (has annoying dep, comments https://aur.archlinux.org/packages/libc%2B%2B/)
 
 ## Setup
 * Clone this repo in a folder inside the root of your home directory
