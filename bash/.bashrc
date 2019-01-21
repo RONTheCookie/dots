@@ -17,3 +17,5 @@ alias trizen="aurman"
 cat ~/.cache/wal/sequences
 export TERM=xterm-256color # Nano doesn't recognize Termite when ssh'ing into a Debian-based machine.
 alias shot="gnome-screenshot -apf scrot.png"
+alias htop="gotop"
+alias firefox="firefox-developer-edition"
