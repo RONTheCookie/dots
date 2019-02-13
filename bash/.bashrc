@@ -19,3 +19,6 @@ export TERM=xterm-256color # Nano doesn't recognize Termite when ssh'ing into a 
 alias shot="gnome-screenshot -apf scrot.png"
 alias htop="gotop"
 alias firefox="firefox-developer-edition"
+export PS1="\[\e[35m\]\u\[\e[m\]@\[\e[35m\]\h\[\e[m\] \w -> "
+alias ls='ls --color=auto --human-readable --group-directories-first --classify'
+source /usr/share/nvm/init-nvm.sh
