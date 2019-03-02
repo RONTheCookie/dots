@@ -5,11 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
-export PATH="$(yarn global bin 2>/dev/null):$PATH"
-export PATH="$PATH:$HOME/go/bin"
-export GOPATH="/home/ron/go"
+export PATH=":$HOME/go/bin:$PATH" # We dont need yarn's $HOME/.yarn/bin as it seems /etc/profile is loading it
+export GOPATH="$HOME/go"
 export VISUAL="nano"
 export EDITOR="nano"
 alias pacman="aurman"
