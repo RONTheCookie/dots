@@ -183,7 +183,7 @@ exec --no-startup-id "nm-applet"
 exec --no-startup-id "kdeconnect-indicator"
 exec --no-startup-id synclient VertScrollDelta=-111
 exec --no-startup-id "xset s 300 120" # 5 minutes (locks), 2 minutes afterwards (suspends)
-exec --no-startup-id "sh ~/.config/i3/xss-lock.sh"
+exec --no-startup-id "sh ~/.local/etc/init.sh"
 exec --no-startup-id "redshift"
 
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 5 && pkill -RTMIN+12 i3blocks"
