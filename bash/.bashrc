@@ -22,3 +22,4 @@ alias firefox="firefox-developer-edition"
 export PS1="\[\e[35m\]\u\[\e[m\]@\[\e[35m\]\h\[\e[m\] \w -> "
 alias ls='ls --color=auto --human-readable --group-directories-first --classify'
 source /usr/share/nvm/init-nvm.sh
+alias code="vscodium"
