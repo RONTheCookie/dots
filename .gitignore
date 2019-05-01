@@ -1,2 +1,3 @@
 *.out
 .vscode
+gtk/.config/gtk-3.0/servers
