@@ -1,2 +1,3 @@
 *.out
 .vscode
+localEtc/.local/etc/screenshotToken
