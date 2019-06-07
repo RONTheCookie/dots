@@ -197,7 +197,7 @@ bindsym $mod+Shift+x workspace next
 bindsym $mod+x [urgent=latest] focus
 
 bindsym --release $mod+l exec "slock"
-bindsym $mod+Pause exec /home/ron/sharenix/sharenix-section
+bindsym --release $mod+Pause exec "sh ~/.local/etc/screenshot.sh"
 bindsym $mod+Shift+Print exec "notify-send Capturing; byzanz-record -v /tmp/roncap.gif; sharenix -n /tmp/roncap.gif; rm /tmp/roncap.gif"
 bindsym --release $mod+Shift+s exec "slock systemctl suspend"
 bindsym $mod+Shift+n exec networkmanager_dmenu
