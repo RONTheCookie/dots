@@ -21,3 +21,5 @@ export PS1="\[\e[36m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\] \w -> "
 alias ls='ls --color=auto --human-readable --group-directories-first --classify'
 source /usr/share/nvm/init-nvm.sh
 alias code="vscodium"
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DOTNET_ROOT=/opt/dotnet
