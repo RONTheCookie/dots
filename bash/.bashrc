@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
+# PS1='[\u@\h \W]\$ '
 export PATH="$HOME/go/bin:$HOME/.yarn/bin:$PATH"
 export GOPATH="/home/ron/go"
 export VISUAL="nano"
