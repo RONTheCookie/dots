@@ -2,6 +2,7 @@
 My Arch system's configuration files, utillities and scripts.
 
 ## Packages
+* [networkmanager-wireguard-git](https://aur.archlinux.org/packages/networkmanager-wireguard-git/)
 * paper-icon-theme: icons
 * ttf-hack: terminal font
 * dunst: notifications
