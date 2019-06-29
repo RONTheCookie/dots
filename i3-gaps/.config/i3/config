@@ -139,27 +139,27 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+    # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+    # Pressing left will shrink the window’s width.
+    # Pressing right will grow the window’s width.
+    # Pressing up will shrink the window’s height.
+    # Pressing down will grow the window’s height.
+    bindsym j resize shrink width 10 px or 10 ppt
+    bindsym k resize grow height 10 px or 10 ppt
+    bindsym l resize shrink height 10 px or 10 ppt
+    bindsym semicolon resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+    # same bindings, but for the arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+    # back to normal: Enter or Escape or $mod+r
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -201,3 +201,22 @@ bindsym --release $mod+Pause exec "sh ~/.local/etc/screenshot.sh"
 bindsym $mod+Shift+Print exec "notify-send Capturing; byzanz-record -v /tmp/roncap.gif; sharenix -n /tmp/roncap.gif; rm /tmp/roncap.gif"
 bindsym --release $mod+Shift+s exec "slock systemctl suspend"
 bindsym $mod+Shift+n exec networkmanager_dmenu
+
+mode "mpc" {
+    # These bindings trigger as soon as you enter the mpc mode
+    bindsym space exec "mpc toggle"
+    bindsym h exec "mpc prev"
+    bindsym j exec "mpc next"
+    # back to normal: Enter or Escape or $mod+t
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+t mode "default"
+}
+
+bar {
+    mode hide
+    hidden_state hide 
+    modifier none
+    status_command $HOME/.local/etc/mpcBar.sh
+}
+bindsym $mod+t mode "mpc"
