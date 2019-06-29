@@ -19,6 +19,7 @@ My Arch system's configuration files, utillities and scripts.
 * byzanz: gif capture
 * sharenix: upload things (i think its just a curl wrapper but i havent gotten around to checking it then abandoning it)
 * redshift: blue light reduction thing
+* mpd: music!
 
 ### Completly unrelated packages:
 * noto-fonts-emoji
