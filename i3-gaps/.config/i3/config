@@ -207,6 +207,7 @@ mode "mpc" {
     bindsym space exec "mpc toggle"
     bindsym h exec "mpc prev"
     bindsym j exec "mpc next"
+    bindsym q exec "mpc clear; mpc add /"
     # back to normal: Enter or Escape or $mod+t
     bindsym Return mode "default"
     bindsym Escape mode "default"
