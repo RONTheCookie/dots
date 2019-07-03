@@ -219,5 +219,6 @@ bar {
     hidden_state hide 
     modifier none
     status_command $HOME/.local/etc/mpcBar.sh
+    tray_output none
 }
 bindsym $mod+t mode "mpc"
