@@ -16,10 +16,12 @@ export DOTNET_ROOT=/opt/dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 alias pacman="aurman"
-alias htop="gotop"
+# alias htop="gotop"
 alias code="vscodium"
 alias shot="gnome-screenshot -apf scrot.png"
 alias firefox="firefox-developer-edition"
 alias ls='ls --color=auto --human-readable --group-directories-first --classify'
 
 source /usr/share/nvm/init-nvm.sh
+# OS Dev Cross Compiler:
+export PATH="/usr/local/i386elfgcc/bin:$PATH"
