@@ -23,7 +23,7 @@ exec redshift
 exec dunst
 
 bindsym --release $mod+Pause exec "sh ~/.local/etc/screenshot.sh"
-
+bindsym $mod+l exec "swaylock -f -c 000000 -e"
 ### Output configuration
 output * bg ~/bg fill
 
