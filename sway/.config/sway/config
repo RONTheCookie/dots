@@ -21,7 +21,6 @@ default_border none
 font pango:Hack 8
 exec redshift
 exec dunst
-
 bindsym --release $mod+Pause exec "sh ~/.local/etc/screenshot.sh"
 bindsym $mod+l exec "swaylock -f -c 000000 -e"
 ### Output configuration
@@ -29,8 +28,8 @@ output * bg ~/bg fill
 
 ### Idle configuration
 exec swayidle -w \
-         timeout 300 'swaylock -f -c 000000 -e' \
-         timeout 600 'swaymsg "output * dpms off"' \
+         timeout 600 'swaylock -f -c 000000 -e' \
+         timeout 300 'swaymsg "output * dpms off"' \
               resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000 -e'
 #
@@ -136,7 +135,7 @@ exec swayidle -w \
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+Shift+f floating toggle
 
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle

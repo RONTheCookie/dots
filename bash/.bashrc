@@ -25,3 +25,5 @@ alias ls='ls --color=auto --human-readable --group-directories-first --classify'
 source /usr/share/nvm/init-nvm.sh
 # OS Dev Cross Compiler:
 export PATH="/usr/local/i386elfgcc/bin:$PATH"
+export HISTFILESIZE=
+export HISTSIZE=
