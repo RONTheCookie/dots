@@ -172,8 +172,9 @@ smart_gaps on
 
 exec --no-startup-id compton
 exec --no-startup-id "nm-applet"
-exec --no-startup-id "kdeconnect-indicator"
-exec --no-startup-id synclient VertScrollDelta=-111
+exec --no-startup-id "/usr/lib/kdeconnectd"
+exec --no-startup-id "indicator-kdeconnect"
+# exec --no-startup-id synclient VertScrollDelta=-111
 exec --no-startup-id "xset s 300 120" # 5 minutes (locks), 2 minutes afterwards (suspends)
 exec --no-startup-id "sh ~/.local/etc/init.sh"
 exec --no-startup-id "redshift"
@@ -194,26 +195,26 @@ bindsym $mod+Shift+Print exec "notify-send Capturing; byzanz-record -v /tmp/ronc
 bindsym --release $mod+Shift+s exec "slock systemctl suspend"
 bindsym $mod+Shift+n exec networkmanager_dmenu
 
-mode "mpc" {
-    # These bindings trigger as soon as you enter the mpc mode
-    bindsym space exec "mpc toggle"
-    bindsym h exec "mpc prev"
-    bindsym j exec "mpc next"
-    bindsym q exec "mpc clear; mpc add /"
-    bindsym r exec "mpc rescan"
-    bindsym Up exec "mpc volume +5"
-    bindsym Down exec "mpc volume -5"
-    # back to normal: Enter or Escape or $mod+t
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-    bindsym $mod+t mode "default"
-}
+#mode "mpc" {
+#    # These bindings trigger as soon as you enter the mpc mode
+#    bindsym space exec "mpc toggle"
+#    bindsym h exec "mpc prev"
+#    bindsym j exec "mpc next"
+#    bindsym q exec "mpc clear; mpc add /"
+#    bindsym r exec "mpc rescan"
+#    bindsym Up exec "mpc volume +5"
+#    bindsym Down exec "mpc volume -5"
+#    # back to normal: Enter or Escape or $mod+t
+#    bindsym Return mode "default"
+#   bindsym Escape mode "default"
+#    bindsym $mod+t mode "default"
+#}
 
-bar {
-    mode hide
-    hidden_state hide 
-    modifier none
-    status_command $HOME/.local/etc/mpcBar.sh
-    tray_output none
-}
-bindsym $mod+t mode "mpc"
+# bar {
+#     mode hide
+#     hidden_state hide 
+#     modifier none
+#     status_command $HOME/.local/etc/mpcBar.sh
+#     tray_output none
+# }
+# bindsym $mod+t mode "mpc"
