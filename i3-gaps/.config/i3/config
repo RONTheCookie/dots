@@ -159,6 +159,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+    font pango:Hack 9
     status_command i3blocks
 }
 
@@ -174,13 +175,12 @@ exec --no-startup-id compton
 exec --no-startup-id "nm-applet"
 exec --no-startup-id "/usr/lib/kdeconnectd"
 exec --no-startup-id "indicator-kdeconnect"
-# exec --no-startup-id synclient VertScrollDelta=-111
 exec --no-startup-id "xset s 300 120" # 5 minutes (locks), 2 minutes afterwards (suspends)
 exec --no-startup-id "sh ~/.local/etc/init.sh"
 exec --no-startup-id "redshift"
 
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 5 && pkill -RTMIN+12 i3blocks"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 5 && pkill -RTMIN+12 i3blocks"
+bindsym XF86MonBrightnessUp exec "brightnessctl set +5% && pkill -RTMIN+12 i3blocks"
+bindsym XF86MonBrightnessDown exec "brightnessctl set 5%- && pkill -RTMIN+12 i3blocks"
 
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+ && pkill -RTMIN+2 i3blocks"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%- && pkill -RTMIN+2 i3blocks"
@@ -191,7 +191,4 @@ bindsym $mod+x [urgent=latest] focus
 
 bindsym --release $mod+l exec "slock"
 bindsym --release $mod+Pause exec "sh ~/.local/etc/screenshot.sh"
-bindsym $mod+Shift+Print exec "notify-send Capturing; byzanz-record -v /tmp/roncap.gif; sharenix -n /tmp/roncap.gif; rm /tmp/roncap.gif"
 bindsym --release $mod+Shift+s exec "slock systemctl suspend"
-bindsym $mod+Shift+n exec networkmanager_dmenu
-bindsym $mod+g exec "emojione-picker"
