@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 # PS1='[\u@\h \W]\$ '
-export PATH="$HOME/go/bin:$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/go/bin:$HOME/.yarn/bin:$PATH:$HOME/.local/bin"
 export GOPATH="/home/ron/go"
 export VISUAL="nano"
 export EDITOR="nano"
