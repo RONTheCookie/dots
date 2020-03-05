@@ -191,4 +191,5 @@ bindsym $mod+x [urgent=latest] focus
 
 bindsym --release $mod+l exec "slock"
 bindsym --release $mod+Pause exec "sh ~/.local/etc/screenshot.sh"
+bindsym --release $mod+Shift+Pause exec "gnome-screenshot -ai"
 bindsym --release $mod+Shift+s exec "slock systemctl suspend"
