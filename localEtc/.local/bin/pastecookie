@@ -1,0 +1,2 @@
+#!/bin/bash
+(echo '```' && cat $(zenity --file-selection) && echo '```') | marky
