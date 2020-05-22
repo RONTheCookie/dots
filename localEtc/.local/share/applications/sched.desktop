@@ -3,5 +3,5 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=false
-Exec=/usr/bin/feh /home/ron/sched.jpeg
+Exec=/usr/bin/feh /home/ron/Sync/school/sched.jpeg
 Name=FehSched

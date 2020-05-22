@@ -1,2 +1,4 @@
 #!/bin/bash
-(echo '```' && cat $(zenity --file-selection) && echo '```') | marky
+FILE=${1:-$(zenity --file-selection)}
+EXT=$(echo $FILE | awk -F'.' '{print $NF}')
+(echo -n '```' && echo $EXT && cat $FILE && echo '```') | marky
