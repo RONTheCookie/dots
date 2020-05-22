@@ -48,10 +48,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+#bindsym $mod+Shift+j move left
+#bindsym $mod+Shift+k move down
+#bindsym $mod+Shift+l move up
+#bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -190,7 +190,7 @@ bindsym $mod+Shift+x workspace next
 bindsym $mod+x [urgent=latest] focus
 
 bindsym --release $mod+l exec "slock"
-bindsym --release $mod+Pause exec "sh ~/.local/etc/screenshot.sh"
+bindsym --release $mod+Pause exec "bash ~/.local/etc/screenshot.sh"
 bindsym --release $mod+Shift+Pause exec "gnome-screenshot -ai"
 bindsym --release $mod+Shift+s exec "slock systemctl suspend"
 bindsym --release $mod+Shift+t exec "sh ~/git/hacks/tntwars_ez_items.sh"
