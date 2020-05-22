@@ -1,2 +1,3 @@
 #!/bin/bash
-(echo '```' && cat $(zenity --file-selection) && echo '```') | marky
+FILE=${1:-$(zenity --file-selection)}
+(echo '<style>body{background:black;color:white;}</style>' && echo '```' && cat $FILE && echo '```') | marky
