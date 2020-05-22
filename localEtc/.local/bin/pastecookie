@@ -1,3 +1,4 @@
 #!/bin/bash
 FILE=${1:-$(zenity --file-selection)}
-(echo '<style>body{background:black;color:white;}</style>' && echo '```' && cat $FILE && echo '```') | marky
+EXT=$(echo $FILE | awk -F'.' '{print $NF}')
+(echo -n '```' && echo $EXT && cat $FILE && echo '```') | marky
