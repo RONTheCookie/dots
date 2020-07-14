@@ -14,6 +14,11 @@ export TERM=xterm-256color # Nano doesn't recognize Termite when ssh'ing into a 
 export PS1="\[\e[36m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\] \w -> "
 export DOTNET_ROOT=/opt/dotnet
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+# History
+HISTCONTROL=ignoreboth
+shopt -s histappend
+PROMPT_COMMAND="history -a; history -n"
 export HISTFILESIZE=
 export HISTSIZE=
 
