@@ -18,7 +18,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 # History
 HISTCONTROL=ignoreboth
 shopt -s histappend
-PROMPT_COMMAND="history -a; history -n"
+# PROMPT_COMMAND="history -a; history -n"
 export HISTFILESIZE=
 export HISTSIZE=
 
