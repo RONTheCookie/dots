@@ -2,3 +2,4 @@
 .vscode
 localEtc/.local/etc/screenshotToken
 gtk/.config/gtk-3.0/servers
+gtk/.config/gtk-3.0/bookmarks
