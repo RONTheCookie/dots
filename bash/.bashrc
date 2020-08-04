@@ -27,3 +27,4 @@ alias shot="gnome-screenshot -apf scrot.png"
 alias ls='ls --color=auto --human-readable --group-directories-first --classify'
 alias bbp='sudo borg create -v --stats /run/media/$USER/backup_primary/borg::$(date +%d.%m.%Y) /home/$USER/Pictures /home/$USER/Documents /home/$USER/git /home/$USER/.ssh'
 alias bbs='sudo borg create -v --stats /run/media/$USER/backup_secondary/borg::$(date +%d.%m.%Y) /home/$USER/Pictures /home/$USER/Documents /home/$USER/git /home/$USER/.ssh'
+alias logspls='ssh vps "cd compose; docker-compose logs -f --tail=10"'
