@@ -1,0 +1,16 @@
+#!/bin/sh
+# music go brr
+
+tmpfolder="/tmp/ron.ytdl2usbadb"
+rm -rf $tmpfolder
+mkdir $tmpfolder
+cd $tmpfolder
+youtube-dl -f 140 "$@"
+mkdir -p "/run/media/ron/$USB/music/$NAME"
+echo ya yeet "/run/media/ron/$USB/music/$NAME/"
+cp * "/run/media/ron/$USB/music/$NAME/" # meh
+echo '... Media copy done ...'
+echo '... Waiting on ADB ...'
+adb wait-for-device
+adb shell mkdir "/storage/8327-1918/music/$NAME/"
+adb push * "/storage/8327-1918/music/$NAME/"
