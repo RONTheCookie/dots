@@ -171,7 +171,7 @@ gaps inner 3
 gaps outer 0
 smart_gaps on
 
-exec --no-startup-id compton
+exec --no-startup-id picom
 exec --no-startup-id "nm-applet"
 exec --no-startup-id "/usr/lib/kdeconnectd"
 exec --no-startup-id "indicator-kdeconnect"
