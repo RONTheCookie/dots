@@ -70,7 +70,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+# bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -98,6 +98,14 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+set $wspotify "Spf"
+
+# assign windows to workspaces
+assign [class="spotify"] $wspotify
+assign [class="firefox"] $ws1
+assign [class="discord"] $ws2
+
+
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
@@ -110,6 +118,8 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
+bindsym $mod+w workspace $wspotify
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
@@ -121,6 +131,8 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+
+bindsym $mod+Shift+w move container to workspace $wspotify
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
