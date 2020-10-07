@@ -1,7 +1,7 @@
 #/bin/bash
 # yay cool script that works like sharenix
-cd ~/.local/etc
-gnome-screenshot -apf /tmp/lscr.png
+cd ~/.local/bin
+gnome-screenshot -apf /tmp/lscr.png $@
 
 test -e /tmp/lscr.png || exit 1 # exit if they escaped instead of capturing scrot
 
