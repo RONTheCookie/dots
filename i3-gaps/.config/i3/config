@@ -180,4 +180,4 @@ bindsym --release $mod+Pause exec screenshot
 bindsym --release $mod+End exec screenshot
 bindsym --release $mod+Shift+Pause exec "screenshot -i"
 bindsym --release $mod+Shift+s exec "slock systemctl suspend"
-bindsym --release $mod+Shift+t exec "sh ~/git/hacks/tntwars_ez_items.sh"
+bindsym --release $mod+Shift+t exec "tntwars_gui"
