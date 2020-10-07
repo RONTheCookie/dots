@@ -181,31 +181,3 @@ bindsym --release $mod+End exec screenshot
 bindsym --release $mod+Shift+Pause exec "screenshot -i"
 bindsym --release $mod+Shift+s exec "slock systemctl suspend"
 bindsym --release $mod+Shift+t exec "sh ~/git/hacks/tntwars_ez_items.sh"
-
-
-# pit of useless default shortcuts:
-# bindsym $mod+Shift+z workspace prev 
-# bindsym $mod+Shift+x workspace next
-# bindsym $mod+x [urgent=latest] focus
-
-# bindsym j resize shrink width 10 px or 10 ppt
-# bindsym k resize grow height 10 px or 10 ppt
-# bindsym l resize shrink height 10 px or 10 ppt
-# bindsym semicolon resize grow width 10 px or 10 ppt
-
-# focus the parent container
-# bindsym $mod+a focus parent
-
-# focus the child container
-#bindsym $mod+d focus child
-# move focused window
-#bindsym $mod+Shift+j move left
-#bindsym $mod+Shift+k move down
-#bindsym $mod+Shift+l move up
-#bindsym $mod+Shift+semicolon move right
-
-# change focus
-# bindsym $mod+j focus left
-# bindsym $mod+k focus down
-# bindsym $mod+l focus up
-# bindsym $mod+semicolon focus right
