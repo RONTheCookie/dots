@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Daemon to synchronize PRIMARY selection with CLIPBOARD selection
+# https://cedaei.com/posts/ideas-from-my-dev-setup-clipboard/
+
+old=""
+while :; do
+	new=$(xclip -selection primary -out) || { sleep 0.5; continue; }
+	if [[ $new != "$old" ]]; then
+		xclip -selection primary -out | xclip -selection clipboard -in
+		old="$new"
+	fi
+	sleep 0.5
+done

@@ -183,13 +183,15 @@ gaps inner 10
 gaps outer 0
 smart_gaps on
 
-exec --no-startup-id picom
+exec --no-startup-id "picom"
 exec --no-startup-id "nm-applet"
 exec --no-startup-id "/usr/lib/kdeconnectd"
 exec --no-startup-id "indicator-kdeconnect"
 exec --no-startup-id "xset s 300 120" # 5 minutes (locks), 2 minutes afterwards (suspends)
-exec --no-startup-id "sh ~/.local/etc/init.sh"
+exec --no-startup-id "xss-lock -n slock -- systemctl suspend"
 exec --no-startup-id "redshift"
+exec --no-startup-id "clip_syncd"
+
 
 bindsym XF86MonBrightnessUp exec "brightnessctl set +5% && pkill -RTMIN+12 i3blocks"
 bindsym XF86MonBrightnessDown exec "brightnessctl set 5%- && pkill -RTMIN+12 i3blocks"
@@ -203,8 +205,8 @@ bindsym $mod+Shift+x workspace next
 bindsym $mod+x [urgent=latest] focus
 
 bindsym --release $mod+l exec "slock"
-bindsym --release $mod+Pause exec "sh ~/.local/etc/screenshot.sh"
-bindsym --release $mod+End exec "sh ~/.local/etc/screenshot.sh"
-bindsym --release $mod+Shift+Pause exec "gnome-screenshot -ai"
+bindsym --release $mod+Pause exec screenshot
+bindsym --release $mod+End exec screenshot
+bindsym --release $mod+Shift+Pause exec "screenshot -i"
 bindsym --release $mod+Shift+s exec "slock systemctl suspend"
 bindsym --release $mod+Shift+t exec "sh ~/git/hacks/tntwars_ez_items.sh"
