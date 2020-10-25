@@ -1,0 +1,6 @@
+keycode  24  =  m             M            adiaeresis            Adiaeresis
+keycode  25  =  i             I            aring                 Aring
+keycode  26  =  o             O            atilde                Atilde
+keycode  27  =  d             D            oslash                Ooblique
+keycode  28  =  e             E            dead_breve            asciitilde
+keycode  29  =  c             C            dstroke               Dstroke
