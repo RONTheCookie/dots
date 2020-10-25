@@ -6,6 +6,6 @@ sed "s/%title%/${1:-Document}/" $part > /tmp/marky.html
 
 marked $1 >> /tmp/marky.html
 echo "</body> </html>" >> /tmp/marky.html
-echo -n https://i.ronthecookie.me/$(curl -F file=@/tmp/marky.html -X POST "https://i.ronthecookie.me/upload/$(cat ~/.local/etc/screenshotToken)" | cut -d \" -f 8) | xclip -selection c
+echo -n https://i.ronthecookie.me/$(curl -F file=@/tmp/marky.html -X POST "https://i.ronthecookie.me/upload/$(cat ~/.local/bin/screenshotToken)" | cut -d \" -f 8) | xclip -selection c
 rm /tmp/marky.html
 notify-send "marky" "Uploaded document"
