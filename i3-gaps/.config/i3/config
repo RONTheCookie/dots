@@ -166,7 +166,7 @@ exec --no-startup-id "indicator-kdeconnect"
 exec --no-startup-id "xset s 300 120" # 5 minutes (locks), 2 minutes afterwards (suspends)
 exec --no-startup-id "xss-lock -n slock -- systemctl suspend"
 exec --no-startup-id "redshift"
-exec --no-startup-id "clip_syncd"
+# exec --no-startup-id "clip_syncd"
 
 bindsym XF86MonBrightnessUp exec "brightnessctl set +5% && pkill -RTMIN+12 i3blocks"
 bindsym XF86MonBrightnessDown exec "brightnessctl set 5%- && pkill -RTMIN+12 i3blocks"
