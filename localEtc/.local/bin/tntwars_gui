@@ -9,7 +9,7 @@ xdotool mousemove 1046 396 # pick
 xdotool click 1
 xdotool mousemove 811 389 #blocks
 xdotool click 1
-xdotool mousemove 995 397
+xdotool mousemove 995 397 #water
 xdotool click 1
 xdotool mousemove 913 390 #ladder
 xdotool click 1
